@@ -1,0 +1,36 @@
+
+
+.roboto-slab{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 16px;
+  font-style: normal;
+}
+
+.blue-rockstar{
+color: #0a65a0 !important;
+
+}
+
+.blue-backround {
+    background-color:#0a65a0 !important;
+  }
+  
+  .highlight-block {
+    color: rgba(255, 0, 0, 0.774);
+    font-size: 80px;     /* Larger font size for the highlighted text */
+    width: 300px;  /* Adjust the width to the content size */
+}
+
+.spaced-image {
+    
+    margin: 15px!important; /* Space on the right */
+
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size:18px;
+    color:black
+}
+  

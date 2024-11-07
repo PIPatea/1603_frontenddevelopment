@@ -21,6 +21,10 @@
 
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<link href="custom.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 	</head>
 
 	<body class="smoothscroll enable-animation">
@@ -308,7 +312,7 @@
 				<div class="overlay dark-7"></div>
 				<div class="container">
 					<div class="text-center">
-						<h2 class="fs-40 fw-300"><strong>Elevating Innovation, Safety, & Style since 1976</strong></h2>
+						<h2 class="roboto-slab blue-rockstar"> Elevating Innovation, Safety, & Style since <span class="highlight-block ">1976 </span></h2>
 						<a class="btn btn-outline-primary btn-lg" href="quote.html">REQUEST QUOTE <i class="fa fa-angle-right"></i></a> 
 						&nbsp; OR &nbsp; 
 						<a class="btn btn-outline-danger btn-lg" href="#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
@@ -319,7 +323,7 @@
 			<section id="portfolio">
 				<div class="container">
 					<div class="heading-title heading-dotted text-center">
-						<h2>Company Highlights</h2>
+						<h2 class="roboto-slab blue-rockstar">Company Highlights</h2>
 					</div>
 					<div class="text-center">
 						<ul class="nav nav-pills mix-filter mb-60">
@@ -330,12 +334,12 @@
 						</ul>
 					</div>
 				</div>
-				<div class="container">
-					<div id="portfolio" class="portfolio-nogutter">
+				<div class="container"  >
+					<div id="portfolio" class="portfolio-">
 						<div class="row mix-grid">
-
-							<div class="col-md-3 col-sm-3 mix commercial">
-								<div class="item-box">
+						
+								<div class="col-md-3 col-sm-3 mix commercial ">
+								<div class="item-box spaced-image"  >
 									<figure>
 										
 											<img class="img-fluid" src="assets/images/rocketElevators/comPortfolio5.jpeg" width="600" height="399" alt="">
@@ -538,15 +542,15 @@
 				</div>
 			</section>
 
-			<section id="team" class="section-xs dark">
+			<section id="team" class="section-xs  blue-backround">
 				<div class="container">
 					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
-
+						
 						<div id="CEO" class="testimonial">
 							<figure>
 								<img class="rounded" src="assets/images/rocketElevators/CEO.jpg" alt="" />
 							</figure>
-							<div class="testimonial-content p-0">
+							<div class="testimonial-content p-0 ">
                                 <h4>PERRY SAWATZKY<br /></h4>
 								<cite>                                    
 									CEO
@@ -575,7 +579,7 @@
 				<div class="container">
 
                     <div class="heading-title heading-dotted text-center">
-						<h2>Latest News & Press Releases</h2>
+						<h2 class="roboto-slab blue-rockstar" >Latest News & Press Releases</h2>
 					</div>
 					<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
 
@@ -677,7 +681,7 @@
 			<section id="clients" class="alternate">
 				<div class="container">
 					<div class="heading-title heading-dotted text-center">
-						<h2>Our Valued Clients</h2>
+						<h2 class="roboto-slab blue-rockstar">Our Valued Clients</h2>
 					</div>
 
 					<ul class="row clients-dotted list-inline">
@@ -752,7 +756,7 @@
 						<div class="col-md-8 col-sm-8">
 
 							<header class="text-center mb-60">
-								<h2>Contact Us Today</h2>
+								<h2 class="roboto-slab blue-rockstar" >Contact Us Today</h2>
 								<hr />
 							</header>
 
@@ -777,8 +781,8 @@
 									<input type="hidden" name="action" value="contact_send" />
 
 									<div class="row">
-											<div class="col-md-4">
-												<label for="name">Full Name</label>
+											<div class="col-md-4"style= >
+												<label for="name" style="font-weight: bold;"> Full Name</label>
 												<input id="name" type="text" value="" class="form-control" name="contact[name]">
 											</div>
 											<div class="col-md-4">
@@ -841,19 +845,19 @@
 
 						</div>
 
-						<div class="col-md-4 col-sm-4" style="padding-left: 5%">
+						<div class="col-md-4 col-sm-4" style="padding-left: 5% ">
 
 							<header class="text-center mb-60">
-								<h2>Visit Us</h2>
+								<h2 class="roboto-slab blue-rockstar">Visit Us</h2>
 								<hr />
 							</header>
 							
 							<img class="img-fluid" src="assets/images/rocketElevators/map.jpg"/>
 						
 							<p style="padding-top: 10%">
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:418-555-1234">(418) 555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
+								<span class="block"><strong class="bold-text"><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+								<span class="block"><strong class="bold-text" ><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:418-555-1234">(418) 555-1234</a></span>
+								<span class="block"><strong class="bold-text"><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
 								<span class="block"><strong>
 									<i class="fa fa-clock-o" aria-hidden="true"></i> 
 									Business Hours:
@@ -865,7 +869,7 @@
 										<li>Wednesday: 9:00 - 17:00</li>
 										<li>Thursday: 9:00 - 17:00</li>
 										<li>Friday: 9:00 - 17:00</li>
-										<li>Saturday: 12:00 - 17:00</li>
+										<li>Saturday: <strong>12:00 - 17:00</strong></li>
 									</ul>
 								</span>
 							</p>
@@ -931,7 +935,7 @@
 							<p>
 								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
 							</p>
-							<h2>(418) 555-1234</h2>
+							<h2 class="roboto-slab blue-rockstar" >(418) 555-1234</h2>
 						</div>
 
 						<div class="col-md-4">
