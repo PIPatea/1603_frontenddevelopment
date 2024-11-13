@@ -22,7 +22,12 @@ let maxOcc_input = document
 let displayCalcElv_input = document
     .getElementById("elevator-amount")
     .querySelector("input");
-
+//
+    const selecttypeofbuilding = document.getElementById("building-type")
+   const card1=document.getElementById("card-1")
+   const card2=document.getElementById("card-2")
+   const card3=document.getElementById("card-3")
+   const card4=document.getElementById("card-4")
 let productLineSelection_div = document.querySelector(".product-line");
 let radioBtns_div = document.querySelector(".radio-btns");
 let warning_p = document.getElementById("warning");
@@ -221,3 +226,30 @@ buildingType_select.addEventListener("change", function () {
         });
     }
 });
+
+
+selecttypeofbuilding.addEventListener("change", () => { 
+console.log(selecttypeofbuilding.value)
+
+if(selecttypeofbuilding.value=="residential") {
+card1.style.backgroundColor="blue"
+card2.style.backgroundColor="blue"
+card3.style.backgroundColor="blue"
+card4.style.backgroundColor="blue"
+} else if (selecttypeofbuilding.value=="commercial") {
+    card1.style.backgroundColor="red"
+    card2.style.backgroundColor="red"
+    card3.style.backgroundColor="red"
+    card4.style.backgroundColor="red"
+}else if (selecttypeofbuilding.value=="industrial"   ){
+    card1.style.backgroundColor="gray"
+    card2.style.backgroundColor="gray"
+    card3.style.backgroundColor="gray"
+    card4.style.backgroundColor="gray"
+
+}
+
+ 
+
+
+})
