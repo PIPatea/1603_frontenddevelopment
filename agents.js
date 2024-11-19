@@ -25,4 +25,34 @@ const getAgentData = async () => {
 }
 
 
-getAgentData()
+
+// A refrence to html 
+const tablebody=document.getElementById("table-body")
+// 
+const populatetable = async () => {
+    //a promise is made to retrieve data but until it is done function is paused and the data in transferred tabledata
+    const tabledata= await getAgentData()
+   // A container for html data
+    let tableContent = '';
+  //the data is being executed each time while agent gives "for each" some thing to look out for
+tabledata.forEach(agent => {
+  //same container but now can be added to more 
+    tableContent += `
+    <tr>
+            <td>${agent. first_name}</td>
+            <td>${agent.last_name}</td>
+            <td>${agent.rating}</td> <!-- Add more properties as needed -->
+            <td>${agent.fee}</td>
+            <td>${agent.region} </td>
+        </tr>
+
+    `;
+});
+
+// Set the table body innerHTML to the generated content
+tablebody.innerHTML = tableContent;
+
+
+} 
+populatetable()
+
