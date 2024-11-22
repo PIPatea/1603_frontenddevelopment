@@ -28,15 +28,14 @@ const getAgentData = async () => {
 
 // A refrence to html 
 const tablebody=document.getElementById("table-body")
-// 
-const populatetable = async () => {
-    //a promise is made to retrieve data but until it is done function is paused and the data in transferred tabledata
-    const tabledata= await getAgentData()
-   // A container for html data
+
+
+const populatetable = async (tabledata) => {
+    // A container for html data
     let tableContent = '';
-  //the data is being executed each time while agent gives "for each" some thing to look out for
-tabledata.forEach(agent => {
-  //same container but now can be added to more 
+    //the data is being executed each time while agent gives "for each" some thing to look out for
+    tabledata.forEach(agent => {
+    //same container but now can be added to more 
     tableContent += `
     <tr>
             <td>${agent. first_name}</td>
@@ -47,12 +46,103 @@ tabledata.forEach(agent => {
         </tr>
 
     `;
-});
+    });
 
-// Set the table body innerHTML to the generated content
-tablebody.innerHTML = tableContent;
+    // Set the table body innerHTML to the generated content
+    tablebody.innerHTML = tableContent;
 
 
 } 
-populatetable()
 
+
+
+
+
+
+
+//===========================FIRST AND LAST NAME SORTING FUNCTIONS===========================//
+const firstuparrow=document.getElementById("first-up-arrow")
+const firstdownarrow=document.getElementById("first-down-arrow")
+const lastuparrow=document.getElementById("last-up-arrow")
+const lastdownarrow=document.getElementById("last-down-arrow")
+const regionbutton=document.getElementById("region-button")
+//----------------sort by first name function----------------//
+async function sortbyfirstname(order){
+    const allAgents = await getAgentData()
+
+    if(order === "up"){
+        //sorting all agents by the first_name
+        allAgents.sort((a, b) => {
+            if (a.first_name < b.first_name) return -1; // a comes before b
+            if (a.first_name > b.first_name) return 1;  // b comes before a
+            return 0; // a and b are equal
+        })
+        
+    }else if (order === "down"){
+        //sorting all agents by the first_name
+        allAgents.sort((a, b) => {
+            if (a.first_name > b.first_name) return -1; // a comes before b
+            if (a.first_name < b.first_name) return 1;  // b comes before a
+            return 0; // a and b are equal
+        })
+    }
+
+    populatetable(allAgents)
+}
+
+//----------------sort by last name function----------------//
+async function sortbylastname(order){
+console.log("sort by last name:",order);
+const allAgents = await getAgentData();
+
+    if(order === "up"){
+        //sorting all agents by the last_name
+        allAgents.sort((a, b) => {
+            if (a.last_name < b.last_name) return -1; // a comes before b
+            if (a.last_name > b.last_name) return 1;  // b comes before a
+            return 0; // a and b are equal
+        })
+        
+    }else if (order === "down"){
+        //sorting all agents by the last_name
+        allAgents.sort((a, b) => {
+            if (a.last_name > b.last_name) return -1; // a comes before b
+            if (a.last_name < b.last_name) return 1;  // b comes before a
+            return 0; // a and b are equal
+        })
+    }
+
+    populatetable(allAgents)
+}
+
+
+
+
+
+
+
+
+firstuparrow.addEventListener("click",() =>{
+sortbyfirstname("up")
+
+})
+firstdownarrow.addEventListener("click",() =>{
+    sortbyfirstname("down")
+})
+
+lastuparrow.addEventListener("click",() =>{
+    sortbylastname("up")
+})
+
+lastdownarrow.addEventListener("click",() =>{
+    sortbylastname("down")
+})
+
+
+
+regionbutton.addEventListener  ("change",async ()=>{
+console.log (regionbutton.value)
+const allAgents = await getAgentData();
+const filteredAgents = allAgents.filter(agent => agent.region === regionbutton.value);
+populatetable(filteredAgents)
+})

@@ -7,7 +7,21 @@ const lastuparrow=document.getElementById("last-up-arrow")
 const lastdownarrow=document.getElementById("last-down-arrow")
 
 function sortbyfirstname(order){
-console.log("sort by first name:", order );
-if ( order="async" )
+console.log("sort by first name:",order);
+}
+
+function sortbylastname(order){
+console.log("sort by last name:",order);
+}
+
+firstuparrow.addEventListener("click",() =>{
+sortbyfirstname("up")
 
 }
+
+)
+lastuparrow.addEventListener("click",() =>{
+    sortbylastname("up")
+})
+
+

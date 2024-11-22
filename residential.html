@@ -385,17 +385,34 @@
         <table class="agent-table">
         <tr>
            
-			<th id="first-up-arrow" id="first-down-arrow" class="table-header">first Name<i class="fas fa-arrow-up"> <i class="fas fa-arrow-down"></i></i> </th>
-		   <th id="last-up-arrow" id="last-down-arrow"class="table-header">last name <i class="fas fa-arrow-up"></i><i class="fas fa-arrow-down"></i> </th>
+			<th  class="table-header">
+				<i id="first-up-arrow" class="fas fa-arrow-up"></i> 
+				<i id="first-down-arrow" class="fas fa-arrow-down"></i>
+					first Name 
+					 </th>
+		   <th class="table-header">
+			last name 
+			<i id="last-up-arrow"class="fas fa-arrow-up"></i>
+			<i id="last-down-arrow"class="fas fa-arrow-down"></i> </th>
 		   <th class="table-header" >rating</th>
 		   <th class="table-header" >fee</th>
-		   <th class="table-header"> region</th>
+		   <th class="region" class="table-header">
+			 region
+			 <select id="region-button">
+				<option value="all" selected>SELECT A REGION</option>
+				<option value="north">NORTH</option>
+				<option value="east" >EAST</option>
+				<option value="south">SOUTH</option>
+				<option value="west">WEST</option>
+			</select>
+		   </th>
 
 
 		</tr>
 
 
-		<tbody class="content" id="table-body">
+		<tbody 
+		 class="content" id="table-body">
 
 		</tbody>
 		</table>
@@ -560,7 +577,7 @@
 		<!-- LAYER SLIDER -->
 		<script src="assets/plugins/slider.layerslider/js/layerslider_pack.js"></script>
 		<script src="assets/js/view/demo.layerslider_slider.js"></script>
-
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<!-- SCRIPT -->
 		<script src="assets/js/scripts.js"></script>
 <script src="agents.js"></script>

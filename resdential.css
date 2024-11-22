@@ -37,3 +37,12 @@ th{
 }
 
 
+.region{
+    width: 200px;          /* Set the width of the select element */
+    height: 100px;          /* Set the height of the select element */
+    font-size: 16px;       /* Adjust the font size of the options */
+    padding: 5px;          /* Add padding for better appearance */
+    border-radius: 5px;    /* Add rounded corners (optional) */
+    border: 1px solid #ccc; /* Border color and style */
+    background-color: #fff; /* Background color */
+}
