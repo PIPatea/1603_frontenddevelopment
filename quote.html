@@ -21,6 +21,11 @@
 
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+	
 	</head>
 
 	<body class="smoothscroll enable-animation">
@@ -124,7 +129,7 @@
 					<form class="validate" id="quote-form">
 
 						<div class="select-building-type card card-default">
-							<div class="card-heading card-heading-transparent">
+							<div id="card-1" class="card-heading card-heading-transparent">
 								<label for="building-type" class="card-title"> 
 									<h3>
 										<span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 1 |</span> Select Type of Building
@@ -134,7 +139,7 @@
 							<div class="card-block" style="margin: 20px">
 								<select name="building-type" id="building-type" class="form-control pointer required">
 									<option>---Select---</option>
-									<option id="residential" value="residential">Residential</option>
+									<option id="residential" id="residential-but" value="residential">Residential</option>
 									<option id="commercial" value="commercial">Commercial</option>
 									<option id="industrial" value="industrial">Industrial</option>
 								</select>
@@ -143,7 +148,7 @@
 
 						<div class="estimate-num-elv card card-default"  style="display: none;"> 
 							
-							<div class="card-heading step-description">
+							<div id="card-2" class="card-heading step-description">
 								<h3>
 									<span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 2 |</span> Provide Building Information
 								</h3>
@@ -207,7 +212,7 @@
 						</div>
 
 						<div class="product-line card card-default" style="display: none;">
-							<div class="card-heading card-heading-transparent">
+							<div id="card-3" class="card-heading card-heading-transparent">
 								<h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 3 |</span> Select Product Line</h3>
 								<p style="margin-bottom: 0px;">* Excluding tax and offers (if applicable)</p>
 								<p style="color: rgb(170, 69, 69); display: none; margin-bottom: 0px;" id="warning">Complete Step 2 to Estimate Price</p> 
@@ -240,7 +245,7 @@
 						</div>
 
 						<div class="final-pricing-display card card-default" style="display: none;">
-							<div class="card-heading card-heading-transparent">
+							<div id="card-4"class="card-heading card-heading-transparent">
 								<h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 4 |</span> Estimated Pricing</h3>
 								<p style="margin-bottom: 0px;">* Excluding tax and offers (if applicable)</p>
 								<p style="color: rgb(170, 69, 69); display: none; margin-bottom: 0px;" id="warning">Complete Step 2 to Estimate Price</p> 
