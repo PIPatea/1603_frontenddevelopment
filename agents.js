@@ -139,10 +139,13 @@ lastdownarrow.addEventListener("click",() =>{
 })
 
 
-
+// listens for change to the button if so change happens 
 regionbutton.addEventListener  ("change",async ()=>{
+//checks what subject in button is being interacted with
 console.log (regionbutton.value)
+//information be is being got then given to allagents
 const allAgents = await getAgentData();
+//the filteredAgents is be given thr end result of the filter array 
 const filteredAgents = allAgents.filter(agent => agent.region === regionbutton.value);
 populatetable(filteredAgents)
 })

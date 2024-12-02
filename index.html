@@ -783,31 +783,31 @@
 									<div class="row">
 											<div class="col-md-4"style= >
 												<label for="name" style="font-weight: bold;"> Full Name</label>
-												<input id="name" type="text" value="" class="form-control" name="contact[name]" required>
+												<input id="full-name" type="text" value="perry sawatzky " class="form-control" name="contact[name]" required>
 											</div>
-											<div class="col-md-4">
+											<div class="col-md-4">  
 												<label for="email">E-mail Address</label>
-												<input id="email" type="email" value="" class="form-control" name="contact[email]" required>
+												<input id="email" type="email" value="rocketElevators@gmail.com" class="form-control" name="contact[email]" required>
 											</div>
 											<div class="col-md-4">
 												<label for="phone">Phone</label>
-												<input id="phone" type="text" value="" class="form-control" name="contact[phone]" required>
+												<input id="phone" type="text" value="813-321-1234" class="form-control" name="contact[phone]" required>
 											</div>
 									</div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="company_name">Company Name</label>
-                                            <input id="name"  type="text" value="" class="form-control" name="contact[name]" required>
+                                            <input id="company-name"  type="text" value="Rockstar" class="form-control" name="contact[name]" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="project_name">Project Name</label>
-                                            <input id="project_name"  type="text" value="" class="form-control" name="contact[name]" required>
+                                            <input id="project-name"  type="text" value="elavators" class="form-control" name="contact[name]" required>
                                         </div>
                                     </div>
 									<div class="row">
 											<div class="col-md-6">
                                                 <label for="project_description">Project Description</label>
-												<input id="project_description"  type="text" value="" class="form-control" name="contact[subject]" required>
+												<input id="project-description"  type="text" value="building elavators" class="form-control" name="contact[subject]" required>
 											</div>
 											<div class="col-md-6">
 												<label for="department">Department</label>
@@ -827,7 +827,7 @@
 									<div class="row">
 											<div class="col-md-12">
 												<label for="attachment">File Attachment</label>
-												<input id="attachment" class="custom-file-upload" type="file" name="contact[attachment]"  data-btn-text="Select a File" accept=".jpg, .jpeg, .png" required/>
+												<input id="attachment" class="custom-file-upload" type="file" name="contact[attachment]"  data-btn-text="Select a File" accept=".jpg, .jpeg, .png" />
 												<small class="text-muted block">
                                                     Max file size: 10Mb (zip/pdf/jpg/png)
                                                 </small>
@@ -838,7 +838,7 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-check"></i> SEND MESSAGE</button>
+										<button id="submit-button" type="submit" class="btn btn-primary btn-lg"><i class="fa fa-check"></i> SEND MESSAGE</button>
 									</div>
 								</div>
 							</form>
@@ -986,7 +986,7 @@
 		<script src="assets/js/view/demo.revolution_slider.js"></script>
 
 		<script src="assets/js/contact.js"></script>
-
+        <script src="script.js"></script>
 		<script type="text/javascript">
 			$("#contact-form").on("submit", function(e){
 				e.preventDefault();
